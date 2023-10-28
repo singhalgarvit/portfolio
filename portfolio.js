@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $("#menuIcon").click(function(){
-      $(".mobileUl").slideToggle(300);
+      $(".mobileUl").slideToggle(500);
       if($("#menuIcon").hasClass("fa-bars")){
         $("#menuIcon").removeClass("fa-bars").addClass("fa-times");
     } else {
