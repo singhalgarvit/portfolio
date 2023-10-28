@@ -91,9 +91,6 @@ body{
     .mobNav{
         display: flex;
     }
-    .section01{
-        font-size: 30px;
-    }
 }
 
 section{
@@ -114,7 +111,7 @@ section{
     -webkit-text-stroke:3px white ;
 }
 .section02{
-    font-size: calc(100vh/10);
+    font-size: 20vh;
     font-family: 'Playpen Sans', cursive;
     color: transparent;
     -webkit-text-stroke:3px white ;
