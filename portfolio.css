@@ -91,6 +91,9 @@ body{
     .mobNav{
         display: flex;
     }
+    .section01{
+        font-size: 30px;
+    }
 }
 
 section{
@@ -105,6 +108,7 @@ section{
     background-image: url("bgImg.jpg");
     background-size: cover;
     background-attachment: fixed !important;
+    background-position-y: 1000px;
     font-size: calc(100vh/10);
     font-family: 'Playpen Sans', cursive;
     color: transparent;

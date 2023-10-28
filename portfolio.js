@@ -37,7 +37,7 @@ window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementsByClassName("nav")[0].style.top = "0";
-  } else {
+} else {
     document.getElementsByClassName("nav")[0].style.top ="-70px" ;
   }
   prevScrollpos = currentScrollPos;
