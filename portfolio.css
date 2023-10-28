@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&family=Roboto&family=Sofia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
 
 *{
     margin: 0;
@@ -89,15 +90,32 @@ body{
 }
 
 section{
-    font-size: 100px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    /* place-items: center; */
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     min-height: 100vh;
+}
+
+.section01{
+    background-image: url("bgImg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: calc(100vh/10);
+    font-family: 'Playpen Sans', cursive;
+    color: transparent;
+    -webkit-text-stroke:3px white ;
+}
+#elem{
+    margin: 0; /* Reset margins */
+    padding: 0; /* Reset padding */
 }
 .hidden{
     opacity: 0;
     transform: translateX(-100%);
-    filter: blur(5px);
+    filter: blur(10px);
     /* transition: all 8s; */
 }
 .show{

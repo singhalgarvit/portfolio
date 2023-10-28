@@ -20,3 +20,14 @@ $(document).ready(function(){
 
   const hiddenItems=document.querySelectorAll(".hidden");
   hiddenItems.forEach((el)=>observer.observe(el));
+
+  var i = 0;
+  var txt = '! am Garvit Singhal';
+  
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("elem").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  }
+}
