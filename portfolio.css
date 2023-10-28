@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&family=Roboto&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.mobNav{
+    display: none;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#menuIcon{
+    margin: 10px;
+    float: right;
+    font-size: 40px;
+}
+.mobNav ul{
+    display: none;
+    margin-top: 20px;
+    justify-content: flex-start;
+    list-style: none;
+    text-decoration: none;
+    /* height: 70px; */
+}
+.mobNav ul a{
+    text-decoration: none;
+}
+.mobNav ul li{
+    margin: 0px 0px;
+    padding: 22px 25px;
+    color: white;
+    letter-spacing:0px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.mobNav ul li:hover{
+    background-color: grey;
+    font-weight: 500;
+}
+
+.lapNav{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+#logoImg{
+    margin: 10px;
+}
+.lapNav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    height: 70px;
+}
+.lapNav ul a{
+    text-decoration: none;
+}
+.lapNav ul li{
+    margin: 0px 0px;
+    padding: 22px 25px;
+    color: white;
+    letter-spacing:0px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.lapNav ul li:hover{
+    background-color: grey;
+    font-weight: 500;
+}
+@media only screen and (max-width: 600px) {
+    .lapNav{
+        display: none;
+    }
+    .mobNav{
+        display: flex;
+    }
+}
