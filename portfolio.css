@@ -91,6 +91,9 @@ body{
     .mobNav{
         display: flex;
     }
+    .section01{
+        font-size: 30px;
+    }
 }
 
 section{
