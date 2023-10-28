@@ -87,3 +87,22 @@ body{
         display: flex;
     }
 }
+
+section{
+    font-size: 100px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+.hidden{
+    opacity: 0;
+    transform: translateX(-100%);
+    filter: blur(5px);
+    /* transition: all 8s; */
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all 1s;
+}

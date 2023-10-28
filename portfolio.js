@@ -8,3 +8,15 @@ $(document).ready(function(){
     }
     });
   });
+
+  const observer= new IntersectionObserver((entries)=>{
+    entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+            entry.target.classList.remove('hidden');
+            entry.target.classList.add('show');
+        }
+    })
+  })
+
+  const hiddenItems=document.querySelectorAll(".hidden");
+  hiddenItems.forEach((el)=>observer.observe(el));
