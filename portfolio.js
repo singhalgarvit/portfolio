@@ -32,7 +32,7 @@ function typeWriter() {
   }
 }
 
-var prevScrollpos = window.pageYOffset;
+var prevScrollpos = document.documentElement.scrollTop;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
