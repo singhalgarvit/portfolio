@@ -1,44 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Garvit Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="portfolio.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="portfolio.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-</head>
-<body onload="typeWriter()">
+  </head>
+  <body onload="typeWriter()">
     <header>
-        <nav class="lapNav nav">
-            <img src="logoGarvit.png" alt="logo" id="logoImg">
-            <ul>
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About Me</li></a>
-                <a href="#project"><li>My Project</li></a>
-                <a href="#contact"><li>Contact Me</li></a>
-            </ul>
-        </nav>
+      <nav class="lapNav nav">
+        <img src="logoGarvit.png" alt="logo" id="logoImg" />
+        <ul>
+          <a href="#home"><li>Home</li></a>
+          <a href="#about"><li>About Me</li></a>
+          <a href="#project"><li>My Project</li></a>
+          <a href="#contact"><li>Contact Me</li></a>
+        </ul>
+      </nav>
 
-        <nav class="mobNav nav">
-            <img src="logoGarvit.png" alt="logo" id="logoImg">
-            <ul class="mobileUl">
-                <a href="#home"><li>Home</li></a>
-                <a href="#about"><li>About Me</li></a>
-                <a href="#project"><li>My Project</li></a>
-                <a href="#contact"><li>Contact Me</li></a>
-            </ul>
-            <i class="fa fa-bars" id="menuIcon"></i>
-        </nav>
+      <nav class="mobNav nav">
+        <img src="logoGarvit.png" alt="logo" id="logoImg" />
+        <ul class="mobileUl">
+          <a href="#home"><li>Home</li></a>
+          <a href="#about"><li>About Me</li></a>
+          <a href="#project"><li>My Project</li></a>
+          <a href="#contact"><li>Contact Me</li></a>
+        </ul>
+        <i class="fa fa-bars" id="menuIcon"></i>
+      </nav>
     </header>
 
-  <section class="section01 ">
-   <center> Hii <p id="elem"></p></center>
-  </section>
+    <section class="section01" id="home">
+      <center>
+        Hii
+        <p id="elem"></p>
+      </center>
+    </section>
 
-  <section class="section02 hidden">
-    Hii 
-  </section>
+    <center>
+      <section class="section02 hidden" id="about">
+        <div class="sided about" align="left">
+            <h1>About Me</h1>
+            Hello! I'm <b>Garvit</b>, a passionate and dedicated second-year
+            engineering student at SKIT, Jaipur, with a keen interest in web
+            development. My journey in the world of technology began with a
+            curiosity to understand how websites work, leading me to dive into the
+            realms of backend development. Currently, I am honing my skills in
+            Node.js, MongoDB, and Express, mastering the art of crafting robust
+            and efficient web applications. I find immense joy in transforming
+            ideas into interactive and user-friendly digital experiences.
+          </div>
+
+          
+        <div class="sided skills" align="left">
+          <h1>My Skills</h1>
+
+          <div class="aSkill">
+            HTML
+            <progress id="html" value="80" max="100"></progress>
+          </div>
+
+          <div class="aSkill">
+            CSS
+            <progress id="css" value="75" max="100"></progress>
+          </div>
+
+          <div class="aSkill">
+            JavaScript
+            <progress id="js" value="60" max="100"></progress>
+          </div>
+
+          <div class="aSkill">
+            NodeJS
+            <progress id="node" value="40" max="100"></progress>
+          </div>
+
+          <div class="aSkill">
+            ExpressJS
+            <progress id="express" value="50" max="100"></progress>
+          </div>
+
+          <div class="aSkill">
+            MongoDB
+            <progress id="mongo" value="35" max="100"></progress>
+          </div>
+        </div>
+      </section>
+
+      <section class="section03 hidden" id="project">
+            <center>
+              <h2><i class="fa fa-folder"></i> My Projects</h2>
+              <div class="projectList" id="projectDiv">
+                
+                <div class="card" title="Calculator">
+                  <img src="calculator_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-calculator.netlify.app">Calculator <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+    
+                <div class="card" title="QR Generator">
+                  <img src="qr_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-qr-generator.netlify.app">QR Generator <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Virtual Keyboard">
+                  <img src="keyb_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-virtualkeyboard.netlify.app">Virtual Keyboard <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Netflix Clone">
+                  <img src="netflix_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-netflixclone.netlify.app/">Netflix Clone <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Number Guess Game">
+                  <img src="num_guess_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-number-guess-game.netlify.app/">Number Guess Game <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Stone Paper Scissor">
+                  <img src="sps_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-stone-paper-scissor.netlify.app/">Stone Paper Scissor <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+    
+                <div class="card" title="Timer">
+                  <img src="timer_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-timer.netlify.app/">Timer <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="To Do List">
+                  <img src="todo_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-todoapp.netlify.app/">To Do List <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Tribute Page">
+                  <img src="tribute_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-tributepage.netlify.app/">Tribute Page <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+                </div>
+                
+                <div class="card" title="Weather App">
+                  <img src="weather_ss.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <h5><b><a href="https://garvit-weatherapp.netlify.app/">Weather App <i class="fa fa-external-link"></i></a></b></h5> 
+                  </div>
+    
+                </div>
+                
+              </div>
+            </center>
+      </section>
+
+      <section class="section04 hidden" id="contact">
+        <h1><i class="fa fa-phone">  </i> Contact Me</h1>
+        <div class="contact info">
+            <form action="" id="contactForm">
+                <input type="text" name="name" id="name" placeholder="Your Name" required><br>
+                <input type="email" name="email" id="email" placeholder="me@example.com" required><br>
+                <input type="text" name="msg" id="msg" placeholder="Message" required><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="contact details" align="left">
+             <i class="fa fa-mobile"> </i> 6375560097 <br>
+             <i class="fa fa-envelope"> </i> garvitsinghal305@gmail.com <br>
+             <i class="fa fa-map-marker"> </i> Jaipur <br>
+        </div>
+      </section>
+
+      <footer>
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <a href="https://github.com/singhalgarvit" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.instagram.com/garvitsinghal305/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://x.com/garvit305?t=i-n7KomM203PkzCUloZHOA&s=08" target="_blank"><i class="fa fa-twitter"></i></a>
+    </footer>
+    </center>
+
+
+
     <script src="portfolio.js"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  </body>
 </html>

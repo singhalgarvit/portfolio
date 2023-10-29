@@ -34,6 +34,13 @@ function typeWriter() {
 
 var prevScrollpos = document.documentElement.scrollTop;
 window.onscroll = function() {
+    let hgt=window.innerHeight;
+    if (document.body.scrollTop > hgt || document.documentElement.scrollTop > hgt ) {
+        document.getElementsByClassName("nav")[0].style.backgroundColor = "#696272";
+  } else {
+    document.getElementsByClassName("nav")[0].style.backgroundColor = "transparent";
+  }
+
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementsByClassName("nav")[0].style.top = "0";
@@ -42,3 +49,5 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
