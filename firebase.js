@@ -24,7 +24,7 @@ async function submitForm(e){
 
   // Save message
   await saveMessage(name, email, msg);
-  alert("Your Response has been recorded \n Thanks For Your Response 💓🙂");
+  alert("Your Response has been recorded.\nThanks For Your Response 💓🙂");
   // Clear form
   document.getElementById('contactForm').reset();
 }
