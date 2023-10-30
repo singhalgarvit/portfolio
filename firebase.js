@@ -14,17 +14,17 @@ firebase.initializeApp(firebaseConfig);
 
 var messagesRef = firebase.database().ref('messages');
 
+document.getElementById("contactForm").addEventListener('submit',submitForm);
 
-
-function submitForm(e){
+async function submitForm(e){
   e.preventDefault();
   var name = getInputVal('name');
   var email = getInputVal('email');
   var msg = getInputVal('msg');
 
   // Save message
-  saveMessage(name, company, email, phone, message);
-
+  await saveMessage(name, email, msg);
+  alert("Your Response has been recorded \n Thanks For Your Response 💓🙂");
   // Clear form
   document.getElementById('contactForm').reset();
 }
@@ -34,7 +34,7 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(name, company, email, phone, message){
+function saveMessage(name, email, msg){
   var newMessageRef = messagesRef.push();
   newMessageRef.set({
     name: name,

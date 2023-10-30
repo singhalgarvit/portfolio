@@ -175,7 +175,7 @@
       <section class="section04 hidden" id="contact">
         <h1><i class="fa fa-phone">  </i> Contact Me</h1>
         <div class="contact info">
-            <form id="contactForm" onsubmit="submitForm(e)" >
+            <form id="contactForm" method="post">
                 <input type="text" name="name" id="name" placeholder="Your Name" required><br>
                 <input type="email" name="email" id="email" placeholder="me@example.com" required><br>
                 <input type="text" name="msg" id="msg" placeholder="Message" required><br>
@@ -200,7 +200,7 @@
 
 
     <script src="portfolio.js"></script>
-    <script src="firebase.js"></script>
+    <script type="module" src="firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
   </body>
 </html>
