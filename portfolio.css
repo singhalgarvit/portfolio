@@ -100,6 +100,7 @@ html{
     }
     .mobNav{
         display: flex;
+        background-color: black;
     }
     .section01{
         font-size: 50px !important;
