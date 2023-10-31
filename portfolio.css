@@ -183,16 +183,15 @@ section{
     display: inline-block;
     align-items: center;
     justify-content: center;
-    /* padding: 1rem 1rem; */
-    /* vertical-align: middle; */
-    /* margin:20px 30px; */
     padding: 40px;
     margin: 100px;
     width: 30vw;
-    /* height: 50vh; */
     height: inherit;
     border-radius: 5px;
     cursor: pointer;
+    -webkit-user-select: none;
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 .sided:hover{

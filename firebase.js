@@ -21,7 +21,8 @@ async function submitForm(e){
   var name = getInputVal('name');
   var email = getInputVal('email');
   var msg = getInputVal('msg');
-
+  // var date=new Date();
+  // var time=new Date().getTime();
   // Save message
   await saveMessage(name, email, msg);
   alert("Your Response has been recorded.\nThanks For Your Response 💓🙂");
@@ -39,6 +40,8 @@ function saveMessage(name, email, msg){
   newMessageRef.set({
     name: name,
     email:email,
-    msg:msg
+    msg:msg,
+    // date:date
+    // time:time
   });
 }
