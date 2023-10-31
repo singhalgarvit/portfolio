@@ -386,6 +386,10 @@ button[type=submit]:hover{
     font-size: 28px;
     padding:30px;
 }
+.details a{
+    color: white;
+    text-decoration: none;
+}
 
 footer{
     position: static;
