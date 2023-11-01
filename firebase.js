@@ -16,7 +16,7 @@ var messagesRef = firebase.database().ref('messages');
 
 document.getElementById("contactForm").addEventListener('submit',submitForm);
 
-async function submitForm(e){k
+async function submitForm(e){
   e.preventDefault();
   var name = getInputVal('name');
   var email = getInputVal('email');
